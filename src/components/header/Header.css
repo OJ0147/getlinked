@@ -1,0 +1,307 @@
+header{
+    /* min-height: 90vh; */
+    border-bottom: var(--section-line);
+}
+/* backgoung images styles */
+.flare-bg {
+    top: -50px;
+    left: -20px;
+}
+.star-white{
+    top: 200px;
+    left: 140px;
+    width: 30px;
+}
+.star-grey{
+    top: 35%;
+    right: 45%;
+}
+.star-grey1{
+    bottom: 5%;
+    left: 45%;
+}
+/* hero text style */
+.hero_headtext{
+    position: relative;
+    padding: 40px 80px 40px 0;
+}
+.hero_headtext img{
+    position: absolute;
+    right: 80px;
+}
+.hero_headtext h3{
+    color: var(--white);
+    font-size: 34px;
+    font-family: var(--text-font);
+    font-style: italic;
+    font-weight: 700;
+    text-align: end;
+    white-space: nowrap;
+}
+/* flex container */
+.banner{
+    display: flex;
+    align-items: center;
+
+}
+/* text side of the header */
+.banner_text{
+    flex: 1;
+    padding: 90px 0 0 80px;
+}
+.banner_text .first-text{
+    position: relative;
+    width: max-content;
+    
+}
+
+.banner_text .first-text h1, 
+.banner_text .second-text h1{
+    color: var(--white);
+    font-size: 80px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+} 
+.banner_text .second-text{
+    display: flex;
+    align-items: center;
+}
+
+.banner_text .second-text h1 span{
+    color: var(--secondary-color);
+    font-size: 80px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+  
+}
+.header-btn{
+    position: relative;
+    z-index: 3;
+}
+.image-3d{
+    position: absolute;
+}
+.image_1{
+    top: -50px;
+    right: 30px;
+}
+
+.banner_text p{
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33.2px;
+    max-width: 522px;
+    margin:  25px 0 ;
+
+}
+
+/* image side of the header */
+.hero{
+    flex: 1.5;
+    height: 100%;
+}
+.hero_img{
+    width: 100%;
+    height: 600px;
+    min-height: 100%;
+}
+.hero_img img{
+    width: 100%;
+    height:100% ;
+    display: block;
+    object-fit: contain;
+
+}
+
+@media only screen and (max-width: 1300px){
+    .hero_headtext h3{
+        font-size: 30px;
+    }
+    .banner_text {
+        padding: 150px 0 0 50px;
+    }
+    
+    .banner_text .first-text h1,
+    .banner_text .second-text h1,
+    .banner_text .second-text h1 span {
+        font-size: 60px;
+    }
+    
+      
+}
+@media only screen and (max-width: 1170px){
+    
+    .banner{
+        flex-direction: column;
+    }
+    .hero_headtext h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero_headtext img{
+        position: absolute;
+        right: 23%;
+    }
+    .banner_text {
+        padding-top: 100px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .first-text{
+        margin:0 auto;
+        text-align: center;
+    }
+    .banner_text .first-text h1,
+    .banner_text .second-text h1,
+    .banner_text .second-text h1 span {
+        font-size: 80px;
+        text-align: center;
+    }
+    .banner_text p{
+        margin: 15px auto 45px;
+
+    }
+    .hero{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .flare-bg {
+        top: -10px;
+        left: -100px;
+        max-width: 1000px;
+    }
+    .hero_headtext{
+        padding-right:0;
+    }
+    .hero_headtext img{
+        right: 23%;
+    }
+}
+@media only screen and (max-width: 920px){
+
+    .flare-bg {
+        left: 100px;
+        max-width: 600px;
+    }
+    .hero_headtext img{
+        position: absolute;
+        right: 80px;
+    }
+}
+
+@media only screen and (max-width: 789px){
+
+    .banner_text .first-text h1,
+    .banner_text .second-text h1,
+    .banner_text .second-text h1 span {
+        font-size: 60px;
+    }
+    .image_2, .image_3{
+        width: 50px;
+    }
+    .flare-bg{
+        left: 0;
+    }
+    .hero_img{
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+   
+}
+@media only screen and (max-width: 645px){
+    .hero_headtext h3{
+        font-size: 25px;
+    }
+    .hero_headtext img{
+        right: 10%;
+        width: 150px;
+    }
+    .banner_text .first-text h1,
+    .banner_text .second-text h1,
+    .banner_text .second-text h1 span {
+        font-size: 50px;
+    }
+    .banner_text .second-text{
+        width: max-content;
+        margin: 0 auto;
+    }
+    .banner_text p{
+        font-size: 18px;
+        max-width: 350px;
+        margin: 15px auto 45px;
+    }
+    .banner_text {
+        padding-top: 40px;
+    }
+    .image_1, .image_2, .image_3{
+        width: 30px;
+    }
+    .image_1{
+        top: -30px;
+        right: 10px;    
+    }
+    .flare-bg{
+        max-width: 500px;
+        left: -100px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .flare-bg{
+        max-width: 300px;
+        left: -70px;
+    }
+    .hero_headtext h3{
+        font-size: 16px;
+    }
+    .hero_headtext img{
+        right: 40px;
+        width: 150px;
+    
+    }
+    .hero_headtext h3{
+        font-size: 20px;
+    }
+    header{
+        padding: 0 15px;
+
+    }
+}
+@media only screen and (max-width: 460px){
+    .hero_headtext img{
+        right: 20px;
+        width: 120px;
+    }
+    .hero_headtext h3{
+        font-size: 18px;
+    }  
+    .banner_text p{
+        font-size: 16px;
+    }
+    .banner_text .first-text h1,
+    .banner_text .second-text h1,
+    .banner_text .second-text h1 span {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 400px){
+     .hero_headtext h3{
+        font-size: 16px;
+    }  
+    .hero_headtext img{
+        right: 0px;
+    }
+
+}
+@media only screen and (max-width: 360px){
+    .hero_headtext h3{
+        font-size: 14px;
+   
+    }  
+    .banner_text p{
+        font-size: 13px;
+    }
+
+}

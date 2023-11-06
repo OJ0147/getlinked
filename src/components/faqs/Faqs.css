@@ -1,0 +1,28 @@
+.faqs_header{
+    padding-bottom: 25px;
+}
+.faqs_param{
+    width: 75%;
+}
+.img4{
+    right: 10%;
+    bottom: 70px;
+}
+.img5{
+    left: 60%;
+    top: 100px;
+}
+.accordion{
+    margin-top: 50px;
+}
+.faqs_txt{
+    flex-basis: 45%;
+}
+.faqs_img{
+    flex-basis: 65%;
+}
+@media only screen and (max-width: 1170px){
+    .faqs_param{
+        margin: 0 auto;
+    }
+}

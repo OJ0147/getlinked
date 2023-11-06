@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;1,700&family=Unica+One&display=swap');
+:root{
+  --primary-color: #150E28;
+  --secondary-color : #D434FE;
+  --bluish-purple: #903AFF;
+  --deep-purple: #FF26B9;
+  --white: #ffffff;
+  --btn-color:linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+  --text-font: 'Montserrat', sans-serif;
+  --heading-font: 'Clash Display', sans-serif;
+  --counter-font : 'Unica One', cursive;
+  --section-line: 0.5px solid #ffffff25;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  font-family: var(--text-font);
+  background-color: var(--primary-color);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.bg-images{
+  position: absolute;
+  z-index: -1;
+}
+.flex__wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    border-bottom: var(--section-line);
+    padding: 120px 150px;
+    position: relative;
+
+}
+.flex__wrapper p, .main_txt ul li h4, .timeline__parag, .partners-wrapper p{
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--white);    
+}
+.main_txt ul li h4{
+  font-size: 16px;
+}
+.flex_img{
+    flex: 1;
+    flex-basis: 50%;
+}
+.flex_img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+.flex_txt{
+    flex: 1;
+    flex-basis: 50%;
+}
+a.btn{
+  background: var(--btn-color);
+  padding: 20px 50px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16;
+  font-family: var(--text-font);
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  white-space: nowrap;
+}
+a{
+  position: relative;
+  z-index: 3;
+}
+.header__span,.header__span span{
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+
+}
+.header__span span{
+    color: var(--secondary-color);
+    display: block;
+
+}
+.anim_stars{
+  animation: blink-animation 2s linear infinite ;
+  -webkit-animation: blink-animation 2s linear infinite ;
+}
+
+.anim_delay1{
+  animation: blink-animation 2s linear 3s infinite ;
+  -webkit-animation: blink-animation 2s linear 3s infinite ;
+}
+
+.anim_delay2{
+  animation: blink-animation 2s linear 5s infinite ;
+  -webkit-animation: blink-animation 2s linear 5s infinite ;
+}
+@keyframes blink-animation {
+  0%{
+    opacity: 0;  
+  }
+  50%{
+    opacity: .5;
+    transform: scale(.3);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes blink-animation {
+  0%{
+    opacity: 0;  
+  }
+  50%{
+    opacity: .5;
+    transform: scale(.3);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(0);
+  }
+}
+@media only screen and (max-width : 1170px){
+  .header__span, .header__span span {
+    text-align: center;
+  }
+  .flex__wrapper{
+    flex-direction: column;
+  }
+  .flex__wrapper p{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 780px){
+  .flex__wrapper{
+    padding: 50px;
+  }
+ 
+}
+
+@media only screen and (max-width: 550px){
+  .header__span,
+  .header__span span{
+    font-size: 20px;
+  }
+  .flex__wrapper{
+    padding: 50px 15px;
+  }
+
+}
+@media only screen and (max-width: 460px){
+  a.btn{
+    font-size: 14px;
+    padding: 15px 40px;
+  }
+}
+

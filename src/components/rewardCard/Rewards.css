@@ -1,0 +1,217 @@
+.rewards-container{
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.rewards-top-txt{
+    width: 45%;
+    text-align: left;
+    margin-left: auto;
+}
+.rewards-top-txt p{
+    color: var(--white);
+    font-size: 18px;
+    width: 70%;
+    line-height: 27px;
+    margin: 25px 0 40px;
+}
+.rewards__wrapper{
+    align-items: flex-end;
+    gap: 30px;
+    padding: 50px 0;
+    justify-content: center;
+    border-bottom: 0;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.reward-card{
+    max-width: 200px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+    background-color: rgba(214, 52, 254, 0.09);
+    backdrop-filter: blur(5px);
+}
+.reward-card img{
+    transform: translateY(-30%);
+}
+.reward-card:nth-child(2){
+    height: 300px;
+    background-color:rgba(143, 58, 255, 0.09) ;
+    border: 1px solid var(--bluish-purple);
+}
+.reward-card:nth-child(2) img{
+    transform: translateY(-20%);
+
+}
+.card-txt h2{
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: 32px;
+    font-weight: 700;
+}
+.card-txt h3{
+    color: var(--secondary-color);
+    font-family: var(--text-font);
+    font-size: 24px;
+    font-weight: 700;
+}
+.reward-card:nth-child(2) .card-txt h3{
+    color: var(--bluish-purple);
+    font-family: var(--text-font);
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-txt h4{
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+@media only screen and (max-width: 1227px){
+  .reward-card{
+    max-width: 180px;
+    height: 250px;
+  }
+  .cards{
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 1190px){
+    .rewards__wrapper{
+        gap: 20px;
+    }
+
+}
+@media only screen and (max-width: 1170px){
+    .rewards-top-txt{
+        width: 100%;
+        text-align: center;
+        margin:0 auto;
+    }
+    .rewards-top-txt p{
+        font-size: 18px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .rewards__img img{
+        width: 100%;
+        height: 100%;
+    }
+    .rewards__wrapper{
+        align-items: center;
+        gap: 250px;
+    }
+}
+@media only screen and (max-width: 658px){
+   
+    .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .reward-card{
+        /* max-width: 200px; */
+        height: 250px;
+    }
+    .reward-card img{
+        width: 150px;
+    }
+    
+    .reward-card:nth-child(2){
+        /* max-width: 200px; */
+    }
+    .reward-card:nth-child(2) img{
+        width: 200px;
+        transform: translateY(-30%);
+    }
+    .rewards__wrapper{
+        gap: 120px;
+        padding: 50px;
+
+    }
+    
+}
+@media only screen and (max-width: 555px){
+
+    .reward-card{
+        max-width: 120px;
+        height: 150px;
+    }
+    .reward-card img{
+        width: 100px;
+        transform: translateY(-10%);
+    }
+    
+    .reward-card:nth-child(2){
+        max-width: 120px;
+        height: 180px;
+    }
+    .reward-card:nth-child(2) img{
+        width: 120px;
+        transform: translateY(-20%);
+    }
+    .rewards__wrapper{
+        gap: 120px;
+        padding: 50px 15px;
+    }
+    .card-txt h2{
+        font-size: 24px;
+    }
+    .card-txt h3{
+        font-size: 18px;
+    }
+    .reward-card:nth-child(2) .card-txt h3{
+        font-size: 18px;
+    }
+    .card-txt h4{
+        font-size: 18px;
+    }
+    .reward-card{
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 395px){
+    .rewards-top-txt p{
+        width:95% ;
+    }
+    .cards{
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .reward-card{
+        max-width: 90px;
+        height: 150px;
+    }   
+    .reward-card:nth-child(2){
+        max-width: 90px;
+    }
+   
+    /*  */
+    .card-txt h2{
+        font-size: 20px;
+    }
+    .card-txt h3{
+        font-size: 16px;
+    }
+    .reward-card:nth-child(2) .card-txt h3{
+        font-size: 16px;
+    }
+    .card-txt h4{
+        font-size: 16px;
+    }
+
+}

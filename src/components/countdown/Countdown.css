@@ -1,0 +1,32 @@
+.countdown-wrapper{
+    margin-top: 40px;
+}
+span{
+    color: var(--white);
+    font-family: var(--counter-font);
+}
+.time-value{
+    font-size: 64px;
+    font-weight: 400;
+}
+.time-alph{
+    font-family: var(--text-font);
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+@media screen and (max-width : 789px){
+    .countdown-wrapper{
+     margin: 40px 0 30px;
+    }
+   
+}
+@media screen and (max-width : 450px){
+
+    .time-value{
+        font-size: 50px;
+    }
+    .time-alph{  
+        margin-right: 5px;
+    }
+}

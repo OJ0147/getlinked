@@ -1,0 +1,128 @@
+.policy__wrapper{
+    border-bottom: 0;
+}
+.policy_img{
+    background: url(../../assets/shield.png);
+    background-position: top center;
+    background-size: calc(100% - 200px);
+    background-repeat: no-repeat;
+}
+.first-parag{
+    padding: 20px 0 30px;
+}
+.second-parag{
+    width: 70%;
+    padding-bottom: 50px;
+}
+.policy-box{
+    border: 1px solid var(--secondary-color);
+    padding: 50px 20px 45px 54px;
+    
+}
+.policy-box > p{
+    width: 90%;
+    margin-bottom: 30px;
+}
+.policy-box h4{
+    color: var(--secondary-color);
+    font-family: var(--text-font);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.policy-box .list-txt{
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.policy-box ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.policy-box ul li:first-child{
+    padding-bottom: 25px;
+}
+.policy-box ul li P{
+    width: 85%;
+}
+.policy-box ul li img{
+    margin-top: 5px;
+}
+.policy-box a{
+    width: 180px;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+.asset5{
+    right: 100px;
+    bottom: 100px;
+}
+.asset6{
+    right: 20%;
+    top: 10%;
+}
+.asset7{
+    right: 30px;
+    bottom: 200px;
+}
+
+@media only screen and (max-width:1170px){
+    .policy-box ul li P{
+        text-align: left;
+
+    }
+    .policy-box .list-txt{
+      text-align: left;
+    }
+    .second-parag{
+        margin: 0 auto;
+        padding-bottom: 35px;
+    }
+    .first-parag{
+        padding: 10px 0 25px;
+    }
+
+}
+@media only screen and (max-width: 550px){
+    .second-parag{
+        width: 90%;
+    }
+    .policy-box{
+        padding: 30px;
+    
+    }
+    .policy-box > p{
+        width: 100%;
+    }
+    .policy_img{
+        background-size: calc(100% - 50px);
+    }
+    .policy-box h4{
+        margin-bottom: 0;
+    }
+    .policy-box .list-txt{
+        margin-bottom: 15px;
+    }
+
+}
+@media only screen and (max-width: 460px){
+    .policy-box{
+        padding: 30px 15px;
+    
+    }
+    .policy-box ul li P{
+        width: 100%;
+    }
+    .policy-box .list-txt{
+        font-weight: 500;
+    }
+    .policy-box a{
+        width: 140px;
+        margin: 20px auto 0;
+        padding: 15px 20px;
+        
+    }
+
+}

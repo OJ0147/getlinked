@@ -1,0 +1,123 @@
+
+.section-wrapper:nth-child(2){
+    flex-direction: row-reverse;
+
+}
+
+
+.section_txt, .flex_txt{
+    flex: 1;
+    flex-basis: 50%;
+}
+
+.section_txt p{
+    padding-top: 25px;
+    
+}
+.sec-bg-img{
+    position: absolute;
+    z-index: -1;
+}
+.section-wrapper:nth-child(2) .asset1,
+.section-wrapper:nth-child(2) .asset2,
+.section-wrapper:nth-child(2) .arrow{
+    display: none;
+}
+.section-wrapper:first-child .asset3,
+.section-wrapper:first-child .asset4,
+.section-wrapper:first-child .half-flare,
+.section-wrapper:first-child .full-flare{
+    display: none;
+}
+.half-flare{
+    right: 0;
+    max-width: 300px;
+}
+.asset3{
+    right: 50%;
+    bottom: 20%;
+}
+.asset4{
+    left: 30%;
+    top: 40%;
+}
+.full-flare{
+    left: 200px;
+    top: 0px;
+    max-width:600px;
+}
+.asset1{
+    left: 120px;
+    top: 40%;
+}
+.arrow{
+    right: 50%;
+    bottom: 20%;
+}
+.asset2{
+    right: 150px;
+    top: 45%;
+}
+
+@media only screen and (max-width : 1170px){
+
+    .section-wrapper:nth-child(2){
+        flex-direction: column;
+    }
+    .section-wrapper:nth-child(2) .section_txt{
+        margin-top: -50px;
+    }
+    .arrow{
+        right: 50%;
+        bottom: 37%;
+    }
+
+
+    .full-flare{
+        left: 50px;
+        top: 0px;
+        max-width:600px;
+    }
+
+}
+@media only screen and (max-width: 780px){
+
+    .arrow{
+        bottom: 37%;
+    }
+}
+@media only screen and (max-width: 669px){
+    .full-flare{
+        left: -200px;
+        max-width: 500px;
+    }
+    .arrow{
+        bottom: 38%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .arrow{
+        right: 50%;
+        bottom: 45%;
+    }
+
+    .arrow{
+        bottom: 35%;
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 475px){
+    .arrow{
+        bottom: 40%;
+    }
+}
+@media only screen and (max-width: 408px){
+    .arrow{
+        bottom: 47%;
+    }
+}
+@media only screen and (max-width: 345px){
+    .arrow{
+        bottom: 54%;
+    }
+}
