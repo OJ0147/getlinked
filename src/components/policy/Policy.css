@@ -1,5 +1,6 @@
 .policy__wrapper{
     border-bottom: 0;
+    overflow-y: hidden;
 }
 .policy_img{
     background: url(../../assets/shield.png);

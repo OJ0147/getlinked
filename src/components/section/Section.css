@@ -1,4 +1,6 @@
-
+.section-wrapper{
+    overflow-y: hidden;
+}
 .section-wrapper:nth-child(2){
     flex-direction: row-reverse;
 

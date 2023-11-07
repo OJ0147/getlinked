@@ -19,14 +19,15 @@ const Policy = () => {
   return (
     <>
         <div className="flex__wrapper policy__wrapper">
-            <div className="overflow-wrap flex_txt">
+            <div className=" flex_txt">
+                <div className="overflow-wrap">
                 <h3 data-aos='fade-left' data-aos-delay="1000" className='header__span'>Privacy Policy and <span>Terms</span></h3>
                 <p data-aos='fade-right' data-aos-delay="1200" className="first-parag">Last updated on September 12, 2023</p>
                 <p data-aos='fade-right' data-aos-delay="1400" className="second-parag">
                     Below are our privacy & policy, which outline a lot of goodies. 
                     it’s our aim to always take of our participant
                 </p>
-
+                </div>
                 <div data-aos='fade-up' data-aos-delay="1600" className="policy-box">
                     <p >
                         At getlinked tech Hackathon 1.0, we value your privacy
