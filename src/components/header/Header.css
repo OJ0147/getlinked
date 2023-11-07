@@ -1,8 +1,8 @@
 header{
-    /* min-height: 90vh; */
     border-bottom: var(--section-line);
+    width: 100%;
+    overflow-x: hidden;
 }
-/* backgoung images styles */
 .flare-bg {
     top: -50px;
     left: -20px;

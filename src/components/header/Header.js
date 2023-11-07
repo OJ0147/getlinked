@@ -27,7 +27,7 @@ const Header = () => {
         <img src={starGrey} alt="grey-star" className="bg-images star-grey anim_delay1"/>
         <img src={starGrey} alt="grey-star" className="bg-images star-grey1 anim_delay2 delayed2"/>
 
-        <div data-aos='zoom-in-down' data-aos-delay="500" className="hero_headtext">
+        <div data-aos='zoom-in' data-aos-delay="500" className="hero_headtext">
             <h3>Igniting a Revolution in HR Innovation</h3>
             <img src={line} alt="vector"/>
         </div>
