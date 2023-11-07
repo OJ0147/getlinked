@@ -19,7 +19,7 @@ const Rewards = () => {
 
   return (
     <div className="rewards-container">
-      <div className="rewards-top-txt">
+      <div className="overflow-wrap rewards-top-txt">
         <h3 data-aos="fade-right" data-aos-delay="1150" className="header__span">
           Prizes and<span>Rewards</span>
         </h3>

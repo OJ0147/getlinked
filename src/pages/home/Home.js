@@ -30,7 +30,7 @@ const Home = () => {
       <div>
         <Header />
       </div>
-      <section className="intro" styles={{ height: "90vh" }}>
+      <section className="intro" >
         <Section
           imageUrl={idea}
           title="Introduction to getlinked"
@@ -56,7 +56,7 @@ const Home = () => {
           >
             Judging Criteria <span>Key attributes</span>
           </h3>
-          <ul>
+          <ul className="overflow-wrap">
             <li data-aos="fade-right" data-aos-delay="700">
               <h4>Innovation and Creativity:</h4>
               <p>
@@ -121,6 +121,7 @@ const Home = () => {
         <Faqs />
       </div>
       <div className="time-line" id='timeline'>
+        <div className="overflow-wrap">
         <h3
           data-aos="fade-right"
           data-aos-delay="900"
@@ -136,24 +137,27 @@ const Home = () => {
           Here is the breakdown of the time we anticipate using for the upcoming
           event.
         </p>
+        </div>
+
         <main className="timeline_container">
           {/* <!-- timeline --> */}
           {timelineData.map(({ date, details, title, id }) => {
             return (
               <div className="timeline_wrapper" key={id}>
-                <div data-aos="fade-left" data-aos-delay="1100" className="timeline_title">
-                  <h3>{title}</h3>
-                  <p>{details} </p>
+                <div className="overflow-wrap timeline_title">
+                  <h3 data-aos="fade-left" data-aos-delay="1100">{title}</h3>
+                  <p data-aos="fade-left" data-aos-delay="1100">{details} </p>
                 </div>
+                
                 <div className="timeline_middle">
                   <div data-aos="fade-down" data-aos-delay="1000" className="line"></div>
                   <span data-aos="zoom-in" data-aos-delay="1050">
                     <h4>{id}</h4>
                   </span>
                 </div>
-
-                <div data-aos="fade-right" data-aos-delay="1150" className="timeline_date">
-                  <h3>{date} </h3>
+                
+                <div  className="timeline_date overflow-wrap">
+                  <h3 data-aos="fade-right" data-aos-delay="1150">{date} </h3>
                 </div>
                 
               </div>
@@ -174,7 +178,10 @@ const Home = () => {
         <h3 data-aos="zoom-in" data-aos-delay="900" className="header__span">
           Partners and Sponsors
         </h3>
-        <p data-aos="fade-left" data-aos-delay="1000" >Getlinked Hackathon 1.0 is honored to have the following major companies as it's partners and sponsors</p>
+        <div className="overflow-wrap">
+          <p data-aos="fade-left" data-aos-delay="1000" >Getlinked Hackathon 1.0 is honored to have the following major companies as it's partners and sponsors</p>
+        </div>
+
         <div data-aos="fade-up" data-aos-delay="1200" className="partners-logo-container">
             <img src={companyImg} alt="partners-logo" />
     

@@ -19,7 +19,7 @@ const Policy = () => {
   return (
     <>
         <div className="flex__wrapper policy__wrapper">
-            <div className="flex_txt">
+            <div className="overflow-wrap flex_txt">
                 <h3 data-aos='fade-left' data-aos-delay="1000" className='header__span'>Privacy Policy and <span>Terms</span></h3>
                 <p data-aos='fade-right' data-aos-delay="1200" className="first-parag">Last updated on September 12, 2023</p>
                 <p data-aos='fade-right' data-aos-delay="1400" className="second-parag">

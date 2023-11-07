@@ -17,13 +17,14 @@
   box-sizing: border-box;
 }
 body{
-  width: 100vw;
+  width: 100%;
   height: 100%;
   font-family: var(--text-font);
   background-color: var(--primary-color);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 .bg-images{
   position: absolute;
   z-index: -1;
@@ -132,6 +133,10 @@ a{
     opacity: 1;
     transform: scale(0);
   }
+}
+/* fix for overflow caused by animation slide left and right */
+.overflow-wrap{
+  overflow-x: hidden;
 }
 @media only screen and (max-width : 1170px){
   .header__span, .header__span span {

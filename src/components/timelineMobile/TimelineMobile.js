@@ -13,7 +13,7 @@ const TimelineMobile = () => {
         {timelineData.map(({id, title,details, date})=>{
             return(
                 <div key={id} className="timeline_mobile">
-                    <div className="timeline_top">
+                    <div className="overflow-wrap timeline_top">
                         <div data-aos="fade-down" data-aos-delay="1000" className="line_mobile"></div>
                         <div data-aos="fade-left" data-aos-delay="1150" className="timeline_mobile_txt">
                             <h3>{title} </h3>

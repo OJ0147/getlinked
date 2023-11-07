@@ -61,6 +61,8 @@ header{
     font-size: 80px;
     font-family: var(--heading-font);
     font-weight: 700;
+    position: relative;
+    z-index: 900;
 } 
 .banner_text .second-text{
     display: flex;
@@ -140,10 +142,7 @@ header{
         font-size: 30px;
         text-align: center;
     }
-    .hero_headtext img{
-        position: absolute;
-        right: 23%;
-    }
+
     .banner_text {
         padding-top: 100px;
         padding-left: 0;
@@ -187,12 +186,11 @@ header{
     }
     .hero_headtext img{
         position: absolute;
-        right: 80px;
+        right: 150px;
     }
 }
 
 @media only screen and (max-width: 789px){
-
     .banner_text .first-text h1,
     .banner_text .second-text h1,
     .banner_text .second-text h1 span {

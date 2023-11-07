@@ -71,7 +71,7 @@ nav{
         height: 65vh;
         padding: 50px;
         position: absolute;
-        top: -550px;
+        top: -1050px;
         left: 0px;
         background-color: var(--primary-color);
         z-index: 5;

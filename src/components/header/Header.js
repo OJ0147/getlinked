@@ -44,10 +44,11 @@ const Header = () => {
                     <img src={boom} alt="explosion-3d" className='image_3' />
                 </div>
                 
-
-                <p data-aos='fade-right' data-aos-delay="500">
-                    Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize.
-                </p>
+                <div className='overflow-wrap'>
+                    <p data-aos='fade-right' data-aos-delay="500">
+                        Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize.
+                    </p>
+                </div>
                 <Link data-aos='fade-up' data-aos-delay="300" to="registration" className='btn header-btn'>Register</Link>
                 <Countdown
                 countdownTimestampMs={16436736999900}

@@ -19,11 +19,18 @@ const Section = ({imageUrl, title, spanText, description}) => {
     },[])
   return (
     <section className='section-wrapper flex__wrapper'>
+        <div className="overflow-wrap">
         <div data-aos='fade-left' data-aos-delay="500" className="section_img flex_img" >
             <img src={imageUrl} alt="section" />
         </div>
-        <div className="section_txt">
-                                                       
+        </div>
+        <div className="overflow-wrap section_txt"> 
+            <h3 data-aos="fade-left" data-aos-delay="600" className="header__span">
+                {title}
+                <span>
+                {spanText}
+                </span>
+            </h3>                                                  
             <p data-aos='fade-right' data-aos-delay="700">{description} </p>
         </div>
         <img src={purpleStar} alt="background-asset" className='sec-bg-img asset1 anim_stars' />

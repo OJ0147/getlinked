@@ -34,6 +34,7 @@ const Faqs = () => {
           getlinked Hackathon 1.0
         </p>
 
+        <div className="overflow-wrap">
         <div data-aos='fade-right' data-aos-delay="1200"  className="accordion" >  
           <Accordion 
             style={{ backgroundColor: "transparent", borderBottom:"2px solid #D434FE", padding:"0px 0px 5px" }}
@@ -161,9 +162,12 @@ const Faqs = () => {
             </AccordionDetails>
           </Accordion>
         </div>
+        </div>
       </div>
+      <div className="overflow-wrap">
       <div data-aos='zoom-in-left' data-aos-delay="2000" className="flex_img faqs_img">
         <img src={faq} alt="" />
+      </div>
       </div>
       <img src={purpstar} alt="" className="bg-images img1 anim_delay1" />
       <img src={whitestar} alt="" className="bg-images img2 anim_delay2" />
