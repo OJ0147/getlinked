@@ -8,12 +8,11 @@ const MobileNav = ({openMenu, closeMenu}) => {
   return (
     
     <div className={openMenu? "mobile-nav isActive": "mobile-nav"}>
-        <div className="close-menu">
-          <img src={close} alt="times"  onClick={closeMenu} />
-        </div>
-        
-        <Navlinks closeMenu={closeMenu} />
-        
+      <div className="close-menu">
+        <img src={close} alt="times"  onClick={closeMenu} />
+      </div>  
+      
+      <Navlinks closeMenu={closeMenu} />  
     </div>
   )
 }

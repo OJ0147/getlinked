@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 import './Contact.css';
 import purpleStar from '../../assets/starpurp.svg'
@@ -7,8 +7,48 @@ import whiteStar from '../../assets/star.svg'
 import greyStar from '../../assets/star-grey.png'
 import halfFlare from '../../assets/Purple-Lens-Flare-PNG.svg'
 import flare from "../../assets/head-purple-flare.png"
+import Notiflix from 'notiflix';
+import axios from 'axios';
+
 
 const Contact = () => {
+  // local state for all form inputs
+  const[formData, setFormData] = useState({
+    first_name : "",
+    email: "",
+    message:"",
+  })
+  
+
+  // input field change handler
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+// to send input data to rest api
+  const sendMessage = async(e) => {
+    e.preventDefault();
+   
+      try{
+        let response = await axios.post("https://backend.getlinked.ai/hackathon/contact-form", formData);
+        console.log(response.status);
+        Notiflix.Notify.success('Message sent successfully');
+
+        // clears out the form input after submitting
+        setFormData({
+          first_name: "",
+          email: "",
+          message: "",
+        });
+
+      }
+      catch(error){
+        console.log(error.message)
+        Notiflix.Notify.failure(error.message);
+      }
+
+  }
+
   return (
     <div className='flex__wrapper contact__wrapper'>
       <div className="contact-infos">
@@ -31,20 +71,19 @@ const Contact = () => {
       <div className="contact-form">
         <div className="form-wrapper">
           <h4>Questions or need assistance?<br/>Let us know about it!</h4>
-          <form action="">
+          <form action="POST" onSubmit={sendMessage}>
             <div className="form-control">
-              <input type="text" name='fisrtName' placeholder='First Name'autoFocus="true" />
+              <input type="text" name='first_name'  value={formData.first_name} onChange={handleChange} placeholder='First Name' />
             </div>
 
             <div className="form-control">
-              <input type="email" name='email' placeholder='Mail' />
+              <input type="email" name='email'  value={formData.email} onChange={handleChange} placeholder='Mail'/>
             </div>
 
             <div className="form-control">
-              <textarea name="message" id="message" cols="30" rows="7" placeholder='Message'></textarea>
+              <textarea name="message" cols="30" rows="7"  value={formData.message} onChange={handleChange} placeholder='Message'></textarea>
             </div>
-            <button className="btn">Submit</button>
-          
+            <button type='submit' className="btn">Submit</button>
           </form>
         
         </div>
