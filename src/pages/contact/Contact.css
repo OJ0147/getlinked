@@ -51,7 +51,7 @@
     backdrop-filter: blur(1px);
     border-radius: 8px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    width: 90%;
+    width: 100%;
     min-width: 600px;
     margin: 0 auto;
 }
@@ -69,9 +69,10 @@ form .form-control{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
 }
-input, textarea{
+input, textarea, select{
     width: 100%;
     padding: 15px 20px;
+    font-size: 14px;
     background: transparent;
     font-family: var(--text-font);
     border: 1px solid #fff;
@@ -81,14 +82,14 @@ input, textarea{
     resize: none;
     transition: all 0.5s ease-in-out;
 }
-input:focus,textarea:focus{
+input:focus,textarea:focus, select:focus{
     border: 0;
     outline: 2px solid #ff26ba81;
 }
 input::placeholder, textarea::placeholder{
     font-family: var(--text-font);
     color: #fff;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 200;
 }
 form .btn{
@@ -139,6 +140,7 @@ form .btn{
         padding: 50px 30px;
         background: transparent;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
     }
 
 

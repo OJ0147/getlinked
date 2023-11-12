@@ -1,0 +1,146 @@
+.regform-wrapper {
+  padding: 50px;
+  background: #ffffff07;
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin: 0 auto;
+}
+.regform-wrapper h2 {
+  color: var(--secondary-color);
+  font-size: 32px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.regform-wrapper h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px 0 35px;
+}
+.regform-wrapper .container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.regform-wrapper .container small {
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.regform-wrapper .container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.regform-wrapper .container hr {
+  border: 1px solid var(--secondary-color);
+  width: 80px;
+  border-style: none none dotted;
+  color: transparent;
+  background-color: transparent;
+}
+select {
+  font-size: 12px;
+  font-weight: 400;
+}
+option {
+  font-family: var(--text-font);
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 8px 0;
+}
+option:default {
+  font-size: 12px;
+  font-weight: 400;
+}
+option:hover {
+  background-color: var(--primary-color);
+}
+label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  display: block;
+}
+.flex-inputs {
+  display: flex;
+  gap: 20px;
+}
+.review-txt {
+  font-size: 12px;
+  color: var(--secondary-color);
+  font-family: var(--text-font);
+  font-style: italic;
+  font-weight: 200;
+}
+.checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
+  width: 100%;
+  color: #fff;
+}
+.checkbox-wrap small {
+  min-width: 100%;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 200;
+}
+.checkbox-wrap input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.checkbox-wrap input[type="checkbox"]:focus {
+  outline: 0;
+}
+.reg-btn {
+  min-width: 100%;
+}
+@media only screen and (max-width: 630px) {
+  .flex-inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+  .flex-select{
+    flex-direction: row;
+    gap: 15px;
+  }
+  .reg__wrapper{
+    gap: 0px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .regform-wrapper {
+    padding: 50px 30px;
+    background: transparent;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .regform-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .regform-wrapper h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0 25px;
+  }
+  .regform-wrapper .container small {
+    font-size: 12px;
+  }
+  label{
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
