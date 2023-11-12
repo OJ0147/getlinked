@@ -58,9 +58,10 @@ const Register = () => {
           group_size: "",
           privacy_poclicy_accepted: false,
         });
-      } catch (error) {
-        console.log(error.message);
-        Notiflix.Notify.failure(error.message);
+      }
+       catch (error) {
+        Notiflix.Notify.failure("oops 🔌,an error occurred");
+
       }
     } else {
       Notiflix.Notify.failure("agree to terms and conditions to continue");
