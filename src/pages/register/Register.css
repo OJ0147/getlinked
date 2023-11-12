@@ -144,3 +144,16 @@ label {
     padding-bottom: 10px;
   }
 }
+@media only screen and (max-width : 414px){
+    .regform-wrapper{
+        padding: 30px 20px;
+        
+    }
+
+}
+@media only screen and (max-width : 390px){
+    .regform-wrapper{
+        padding: 30px 15px; 
+    }
+
+}

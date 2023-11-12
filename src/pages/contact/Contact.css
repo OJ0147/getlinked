@@ -1,165 +1,173 @@
-.contact__wrapper{
-    position: relative;
-    height: auto;
-    overflow-y: hidden;
-    border: 0;
+.contact__wrapper {
+  position: relative;
+  height: auto;
+  overflow-y: hidden;
+  border: 0;
 }
-.contact-infos h2{
-    color: var(--secondary-color);
-    font-size: 32px;
-    font-family: var(--heading-font);
-    font-weight: 600;
-    margin-bottom: 25px;
+.contact-infos h2 {
+  color: var(--secondary-color);
+  font-size: 32px;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  margin-bottom: 25px;
 }
-.contact-infos p, .contact-infos .call{
-    line-height: 1.8em;
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 20px;
+.contact-infos p,
+.contact-infos .call {
+  line-height: 1.8em;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-.contact-infos .address{
-    width: 60%;
+.contact-infos .address {
+  width: 60%;
 }
-.contact-infos .call{
-    text-decoration: none;
-    display: inline-block;
+.contact-infos .call {
+  text-decoration: none;
+  display: inline-block;
 }
-.contact-infos small{
-    color: var(--secondary-color);
-    font-size: 14px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    display: inline-block;
+.contact-infos small {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  display: inline-block;
 }
-.social-links{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+.social-links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
-.social-links li{
-    margin-right: 8px;
+.social-links li {
+  margin-right: 8px;
 }
-.social-links a{
-    color: #fff;
+.social-links a {
+  color: #fff;
 }
 
 /* contact form styling */
-.form-wrapper{
-    padding: 50px;
-    background: #ffffff07;
-    backdrop-filter: blur(1px);
-    border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    min-width: 600px;
-    margin: 0 auto;
+.form-wrapper {
+  padding: 50px;
+  background: #ffffff07;
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-width: 600px;
+  margin: 0 auto;
 }
-.form-wrapper h4{
-    color: var(--secondary-color);
-    font-size: 16px;
-    margin-bottom: 20px;
+.form-wrapper h4 {
+  color: var(--secondary-color);
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-form{
-    width: 100%;
+form {
+  width: 100%;
 }
-form .form-control{
-    width: 100%;
-    margin-bottom: 25px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+form .form-control {
+  width: 100%;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 14px;
+  background: transparent;
+  font-family: var(--text-font);
+  border: 1px solid #fff;
+  outline: 0;
+  color: #fff;
+  border-radius: 5px;
+  resize: none;
+  transition: all 0.5s ease-in-out;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border: 0;
+  outline: 2px solid #ff26ba81;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--text-font);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+}
+form .btn {
+  border: 0;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
 
-}
-input, textarea, select{
-    width: 100%;
-    padding: 15px 20px;
-    font-size: 14px;
-    background: transparent;
-    font-family: var(--text-font);
-    border: 1px solid #fff;
-    outline: 0;
-    color: #fff;
-    border-radius: 5px;
-    resize: none;
-    transition: all 0.5s ease-in-out;
-}
-input:focus,textarea:focus, select:focus{
-    border: 0;
-    outline: 2px solid #ff26ba81;
-}
-input::placeholder, textarea::placeholder{
-    font-family: var(--text-font);
-    color: #fff;
-    font-size: 12px;
-    font-weight: 200;
-}
-form .btn{
-    border: 0;
-    width: 150px;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-@media only screen and (max-width : 1200px){
-  .contact__wrapper{
+@media only screen and (max-width: 1200px) {
+  .contact__wrapper {
     flex-direction: row;
     padding: 50px;
   }
-  .contact-infos p{
+  .contact-infos p {
     text-align: left;
   }
-  
 }
-@media only screen and (max-width : 1030px){
-    .form-wrapper{
-        min-width: 500px;
-    }
-    .contact-infos .address{
-        width: 85%;
-    }
+@media only screen and (max-width: 1030px) {
+  .form-wrapper {
+    min-width: 500px;
+  }
+  .contact-infos .address {
+    width: 85%;
+  }
 }
-@media only screen and (max-width : 918px){
-  .contact__wrapper{
+@media only screen and (max-width: 918px) {
+  .contact__wrapper {
     flex-direction: column-reverse;
     gap: 20px;
   }
-  .contact-infos p, 
+  .contact-infos p,
   .contact-infos h2,
-  .contact-infos .call{
+  .contact-infos .call {
     display: none;
   }
-  .contact-infos{
+  .contact-infos {
     text-align: center;
   }
- 
 }
 
-@media only screen and (max-width : 550px){
-    .form-wrapper{
-        min-width: 400px;
-        padding: 50px 30px;
-        background: transparent;
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-        backdrop-filter: blur(0px);
-    }
-
-
+@media only screen and (max-width: 550px) {
+  .form-wrapper {
+    min-width: 400px;
+    padding: 50px 30px;
+    background: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+  input,
+  textarea,
+  select {
+    border: 0.5px solid #fff;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 1px solid #ff26ba81;
+  }
 }
-@media only screen and (max-width : 414px){
-    .contact__wrapper{
-        padding: 80px 15px;
-    }
-    .form-wrapper{
-        width: 100%;
-        padding: 30px 20px;
-        
-    }
-
+@media only screen and (max-width: 414px) {
+  .contact__wrapper {
+    padding: 80px 15px;
+  }
+  .form-wrapper {
+    width: 100%;
+    padding: 30px 20px;
+  }
 }
-@media only screen and (max-width : 390px){
-    .form-wrapper{
-        min-width: 300px !important;
-        padding: 30px 20px; 
-    }
-
+@media only screen and (max-width: 390px) {
+  .form-wrapper {
+    min-width: 300px !important;
+    padding: 30px 15px;
+  }
 }
